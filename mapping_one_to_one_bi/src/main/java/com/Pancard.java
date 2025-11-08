@@ -15,7 +15,7 @@ public class Pancard {
 	private int phno;
 	private String country;
 	
-	@OneToOne
+	@OneToOne(mappedBy = "pancard")
 	 private  Person person;
 
 	public int getPno() {
